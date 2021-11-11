@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.container-header {
+  width: 95vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.logo {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #d2872c;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.logo:hover {
+  padding: 4px;
+  text-shadow: 1px 1px 2px black;
+  font-weight: 1000;
+  border-bottom: 1px solid #d2872c;
+  border-radius: 1%;
+}
+
+.menu-nav {
+  width: 25vw;
+  height: 7vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  transition: 4s;
+}
+
+.most {
+  color: #383430;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 6px;
+  border-radius: 20px;
+}
+
+.most:hover {
+  border-radius: 5px;
+  padding: 12px;
+  color: white;
+  background-color: #d2872c;
+}
+
+.container-main {
+  position: relative;
+  width: 85vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.box-main {
+  display: flex;
+  align-content: flex-start;
+  height: 66vh;
+}
+.box-left {
+  position: relative;
+  bottom: 1%;
+  left: 23.4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 410px;
+  z-index: 1;
+}
+.box-text {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  padding: 2px;
+  width: 51vw;
+  height: 170px;
+  color: #766f68;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 75px;
+  z-index: 1;
+}
+.paragraph {
+  width: 550px;
+  height: 90px;
+  color: #766f68;
+  font-size: 2.2rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.btn-action {
+  margin-top: 4px;
+  width: 15vw;
+  height: 7vh;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 15px;
+  color: white;
+  text-shadow: 1px 1px 1px #000000;
+  border: #d2872c;
+  background-color: #d2872c;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-action:hover {
+  color: rgb(0, 0, 0);
+  font-size: 2.3rem;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px #d2872c;
+  background-color: #ffffff;
+  border: solid 1px #d2872c;
+}
+
+.image {
+  width: 55vw;
+  transition: 0.5s;
+  background-color: #d2872c;
+}
+
+.image:hover {
+  padding: 5px;
+  background-color: #d2872c;
+  border-radius: 2%;
+}
+
+@media (max-width: 1600px) {
+  * {
+    font-size: 12px;
+  }
+
+  .box-text {
+    height: 28vh;
+  }
+  .title {
+    width: 43vw;
+    line-height: 60px;
+    height: 130px;
+  }
+  .paragraph {
+    width: 27vw;
+  }
+  .image {
+    width: 55vw;
+  }
+}
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3.8rem;
+  }
+  .btn-action {
+    margin-top: 10px;
+    width: 140px;
+    height: 6vh;
+  }
+}
+@media (max-width: 860px) {
+  .container-header {
+    width: 85vw;
+    justify-content: space-around;
+  }
+  .menu-nav {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 1px;
+    margin-top: 0;
+    margin-bottom: 35px;
+    z-index: 1;
+  }
+
+  .container-main {
+    flex-direction: column-reverse;
+  }
+  .box-main {
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .box-left {
+    position: inherit;
+    width: 60%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box-text {
+    width: 51vw;
+    height: 15vw;
+  }
+  .title {
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+    line-height: 40px;
+    text-align: center;
+  }
+  .paragraph {
+    width: 100%;
+    height: auto;
+    font-size: 1.9rem;
+    text-align: center;
+  }
+
+  .btn-action {
+    margin-top: 90px;
+    width: 300px;
+    height: 7vh;
+    font-size: 2.5rem;
+  }
+  .image {
+    margin-top: 30px;
+    width: 70vw;
+  }
+}
+@media (max-width: 500px) {
+  .container-header {
+    height: 15vh;
+  }
+  .btn-left {
+    width: 32px;
+    height: 2px;
+  }
+  .btn-left:before {
+    width: 32px;
+    height: 2px;
+    top: -10px;
+  }
+  .btn-left:after {
+    width: 32px;
+    height: 2px;
+    top: 10px;
+  }
+  .box-left {
+    width: 100%;
+    height: 40vh;
+    justify-content: space-evenly;
+  }
+  .box-text {
+    width: 80vw;
+    height: 32vw;
+  }
+  .btn-action {
+    margin-top: 60px;
+    width: 45vw;
+    height: 6vh;
+    font-size: 2.1rem;
+  }
+  .image {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 505px) {
+  .container-header {
+    height: 15vh;
+  }
+  .btn-left {
+    width: 32px;
+    height: 2px;
+  }
+  .btn-left:before {
+    width: 32px;
+    height: 2px;
+    top: -10px;
+  }
+  .btn-left:after {
+    width: 32px;
+    height: 2px;
+    top: 10px;
+  }
+  .box-left {
+    width: 100%;
+    height: 40vh;
+    justify-content: space-evenly;
+  }
+  .box-text {
+    width: 80vw;
+    height: 32vw;
+  }
+  .btn-action {
+    margin-top: 40px;
+    width: 45vw;
+    height: 6vh;
+    font-size: 2.1rem;
+  }
+  .image {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .container-header {
+    height: 15vh;
+  }
+  .btn-left {
+    width: 32px;
+    height: 2px;
+  }
+  .btn-left:before {
+    width: 32px;
+    height: 2px;
+    top: -10px;
+  }
+  .btn-left:after {
+    width: 32px;
+    height: 2px;
+    top: 10px;
+  }
+  .box-left {
+    width: 100%;
+    height: 40vh;
+    justify-content: space-evenly;
+  }
+  .box-text {
+    width: 80vw;
+    height: 32vw;
+  }
+  .btn-action {
+    margin-top: 70%;
+    width: 45vw;
+    height: 6vh;
+    font-size: 2.1rem;
+  }
+  .image {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 210px) {
+  .container-header {
+    height: 15vh;
+  }
+  .btn-left {
+    width: 32px;
+    height: 2px;
+  }
+  .btn-left:before {
+    width: 32px;
+    height: 2px;
+    top: -10px;
+  }
+  .btn-left:after {
+    width: 32px;
+    height: 2px;
+    top: 10px;
+  }
+  .box-left {
+    width: 100%;
+    height: 40vh;
+    justify-content: space-evenly;
+  }
+  .box-text {
+    width: 80vw;
+    height: 32vw;
+  }
+  .btn-action {
+    margin-top: 100%;
+    width: 45vw;
+    height: 6vh;
+    font-size: 2.1rem;
+  }
+  .image {
+    width: 80vw;
+  }
+}
